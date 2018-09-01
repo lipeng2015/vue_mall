@@ -1,6 +1,6 @@
 # vue_mall
 
-> exercise
+> 学习vue的练习demo
 
 ## Build Setup
 
