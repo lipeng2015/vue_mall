@@ -83,7 +83,7 @@
       };
     },
     created() {
-      this.$http.get('/api/ratings').then((response) => {
+      this.$http.get('/h5Api/ratings').then((response) => {
         response = response.body;
 
         if (response.errno === 0) {

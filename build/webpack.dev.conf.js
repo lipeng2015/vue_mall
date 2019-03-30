@@ -20,7 +20,7 @@ var goods = appData.goods
 var ratings = appData.ratings
 
 var apiRoutes = express.Router();
-app.use=('/api',apiRoutes);
+app.use('/h5Api',apiRoutes);
 //=====
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)

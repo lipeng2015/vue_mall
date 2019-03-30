@@ -45,7 +45,7 @@
     },
     created() {
       console.log('router==' + this.$route.query.id);
-      this.$http.get('/api/seller').then((response) => {
+      this.$http.get('/h5Api/seller').then((response) => {
         response = response.body;
         if (response.errno === 0) {
           // 对seller对象进行扩展，此seller就包含id属性

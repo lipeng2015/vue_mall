@@ -15,7 +15,7 @@
             <h1 class="title">{{item.name}}</h1>
             <ul>
               <li v-for="food in item.foods" class="food-item border-1px" :key="food.id" @click="selectFood(food)">
-                <div class="icon">
+                <div class="icon" >
                   <img :src="food.icon" width="57" height="57">
                 </div>
                 <div class="content">
@@ -65,7 +65,7 @@
     },
     created() {
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
-      this.$http.get('/api/goods').then((response) => {
+      this.$http.get('/h5Api/goods').then((response) => {
         response = response.body;
         if (response.errno === 0) {
           this.goods = response.data;
